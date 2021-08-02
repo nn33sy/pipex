@@ -29,5 +29,5 @@ void ft_handle_nb_arg(int argc, char **argv)
         ft_error_parsing();
     ft_handle_file(argv);
     ft_clean_cmd(argv);
-    printf("PARSING OK");
+    printf("PARSING OK\n");
 }
