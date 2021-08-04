@@ -1,12 +1,16 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/inhow-ch/Desktop/pipex'
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_parsing.c -o ft_parsing.o
+echo "Linking" [ ft_parsing.c ] "\033[35m"OK"\033[00m"
+ 
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_utils.c -o ft_utils.o
+echo "Linking" [ ft_utils.c ] "\033[35m"OK"\033[00m"
 gcc -Iincludes -Wall -Wextra -Werror  -c ft_exec.c -o ft_exec.o
 echo "Linking" [ ft_exec.c ] "\033[35m"OK"\033[00m"
 make re -C libft/
 cp libft/libft.a ./pipex.a
-ar rc pipex.a ft_parsing.o ft_exec.o
- 
+ar rc pipex.a ft_parsing.o ft_utils.o ft_exec.o
 echo "Compiling & indexing" [ pipex.a ] "\033[32m"SUCCESS"\033[00m"
-gcc -Iincludes  ft_parsing.o ft_exec.o -Wall -Wextra -Werror  main.c  pipex.a libft/libft.a  -o  pipex
+gcc -Iincludes  ft_parsing.o ft_utils.o ft_exec.o -Wall -Wextra -Werror  main.c  pipex.a libft/libft.a  -o  pipex
 make: Leaving directory `/Users/inhow-ch/Desktop/pipex'
  

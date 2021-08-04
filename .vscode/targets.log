@@ -8,11 +8,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Aug  2 21:11:47 2021
+# Make data base, printed on Wed Aug  4 13:40:02 2021
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -29,11 +28,11 @@ VSCODE_LOG_NATIVE = false
 @F = $(notdir $@)
 # makefile
 CURDIR := /Users/inhow-ch/Desktop/pipex
-# makefile (from `Makefile', line 12)
+# makefile (from `Makefile', line 13)
 C_OK = "\033[35m"
 # makefile
 SHELL = /bin/sh
-# makefile (from `Makefile', line 11)
+# makefile (from `Makefile', line 12)
 C_NO = "\033[00m"
 # environment
 VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
@@ -43,34 +42,38 @@ _ = /usr/bin/make
 CFLAGS = -Wall -Wextra -Werror
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 18)
+# makefile (from `Makefile', line 19)
 SUCCESS = $(C_GOOD)SUCCESS$(C_NO)
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from `Makefile', line 13)
+# makefile (from `Makefile', line 14)
 C_GOOD = "\033[32m"
-# makefile (from `Makefile', line 9)
+# makefile (from `Makefile', line 10)
 OBJS = $(SRCS:.c=.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0004t080016h2/T/vscode-ipc-2ca85808-86e4-408d-b35e-86447e12f43e.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0004t080016h2/T/vscode-ipc-869c8380-dc18-4f0e-a990-fd6f7eca2ec6.sock
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.SMv0yWoHC5/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.VMz7HUPoRL/Render
 # environment
-PATH = /usr/bin:/bin:/usr/sbin:/sbin
+PATH = /Users/inhow-ch/.brew/bin:/Users/inhow-ch/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/munki:/opt/X11/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
-# makefile (from `Makefile', line 15)
+# makefile (from `Makefile', line 16)
 C_WARN = "\033[33m"
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.rsC6ZfXqBQ/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.T7z8KjQWEx/Listeners
 # automatic
 %F = $(notdir $%)
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.OZAOTPHya7/org.macosforge.xquartz:0
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -90,6 +93,8 @@ LOGNAME = inhow-ch
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
+ZSH = /Users/inhow-ch/.oh-my-zsh
+# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
@@ -100,20 +105,21 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 6)
-SRCS = ft_parsing.c ft_exec.c
+SRCS = ft_parsing.c ft_utils.c ft_exec.c
 # environment
 SHLVL = 1
 # makefile (from `Makefile', line 2)
 CC = gcc
 # default
 MAKE_VERSION := 3.81
- 
 # environment
 USER = inhow-ch
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from `Makefile', line 1)
 NAME = pipex.a
+# environment
+LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -133,17 +139,15 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000002.Electron
+XPC_SERVICE_NAME = com.visualstudio.code.oss.1372
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
-# makefile (from `Makefile', line 19)
+# makefile (from `Makefile', line 20)
 OK = $(C_OK)OK$(C_NO)
 # environment
 __CF_USER_TEXT_ENCODING = 0x9A02:0x0:0x1
-# environment
-COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # environment
@@ -151,9 +155,9 @@ VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
 # automatic
 <F = $(notdir $<)
 # environment
-LC_ALL = C
+PAGER = less
 # environment
-SECURITYSESSIONID = 186a8
+LC_ALL = C
 # automatic
 ^F = $(notdir $^)
 # default
@@ -162,14 +166,14 @@ SUFFIXES :=
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
-# makefile (from `Makefile', line 14)
+# makefile (from `Makefile', line 15)
 C_ERROR = "\033[31m"
 # environment
 LANG = C
 # environment
-VSCODE_PID = 814
+VSCODE_PID = 61134
 # variable set hash-table stats:
-# Load=77/1024=8%, Rehash=0, Collisions=6/112=5%
+# Load=80/1024=8%, Rehash=0, Collisions=5/108=5%
 
 # Pattern-specific Variable Values
 
@@ -177,14 +181,14 @@ VSCODE_PID = 814
 
 # Directories
 
-# . (device 16777224, inode 263259): 17 files, no impossibilities.
+# . (device 16777226, inode 263259): 21 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.o: %.c
-#  commands to execute (from `Makefile', line 24):
+#  commands to execute (from `Makefile', line 25):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -193,14 +197,14 @@ VSCODE_PID = 814
 
 # Files
 
-pipex.a: ft_parsing.o ft_exec.o
+pipex.a: ft_parsing.o ft_utils.o ft_exec.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-08-02 21:10:08
+#  Last modified 2021-08-03 15:51:29
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
-#  commands to execute (from `Makefile', line 28):
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 29):
 	@make re -C libft/
 	@cp libft/libft.a ./$(NAME)
 	@ar rc $@ $^
@@ -214,9 +218,9 @@ all: pipex.a
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
@@ -232,37 +236,34 @@ all: pipex.a
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-08-02 21:11:46
+#  Last modified 2021-08-03 15:02:46
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+ft_utils.o: ft_utils.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_utils'
+#  Last modified 2021-08-03 15:51:26
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 25):
+	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
+	@echo "Linking" [ $< ] $(OK)
+	
+
 ft_exec.o: ft_exec.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_exec'
-#  File does not exist.
+#  Last modified 2021-08-03 15:51:26
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := ft_exec.o
-# automatic
-# % := 
-# automatic
-# * := ft_exec
-# automatic
-# + := ft_exec.c
-# automatic
-# | := 
-# automatic
-# < := ft_exec.c
-# automatic
-# ^ := ft_exec.c
-# automatic
-# ? := ft_exec.c
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/18=17%
-#  commands to execute (from `Makefile', line 24):
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 25):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -272,7 +273,7 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 43):
+#  commands to execute (from `Makefile', line 44):
 	@/bin/rm -f $(NAME)
 	@/bin/rm -f pipex
 	@make fclean -C libft/
@@ -282,18 +283,17 @@ fclean: clean
 ft_parsing.o: ft_parsing.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_parsing'
-#  Last modified 2021-08-02 21:10:06
+#  Last modified 2021-08-03 15:51:26
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 24):
+#  commands to execute (from `Makefile', line 25):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
 
 # Not a target:
- 
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -309,25 +309,35 @@ leak:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 35):
+#  commands to execute (from `Makefile', line 36):
 	@$(CC) -Iincludes  $(OBJ) $(CFLAGS)  main.c  $(NAME) libft/libft.a -fsanitize=address -fno-omit-frame-pointer -o  leak
 	
 
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 38):
+#  commands to execute (from `Makefile', line 39):
 	@make clean -C libft/
 	@/bin/rm -f $(OBJ)
 	@echo "[ft_printf] Removed object files!\n"
 	
 
 # Not a target:
+ft_utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-03 15:11:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
 ft_exec.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-08-02 21:11:35
+#  Last modified 2021-08-03 15:51:23
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -336,14 +346,14 @@ ft_exec.c:
 # Not a target:
 ft_parsing.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-08-02 21:09:49
+#  Last modified 2021-08-02 21:42:37
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/43=0%
+# Load=16/1024=2%, Rehash=0, Collisions=0/49=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -355,6 +365,6 @@ ft_parsing.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Aug  2 21:11:47 2021
+# Finished Make data base on Wed Aug  4 13:40:02 2021
 
  

@@ -23,7 +23,8 @@ typedef struct s_data{
     char *file_two;
     int fd_1;
     int fd_2;
-
+    char **pre_chain;
+    char **env;
 }t_data;
 
 t_data g_da;
@@ -31,4 +32,6 @@ void ft_error_parsing(void);
 void ft_clean_cmd(char **argv);
 void ft_handle_nb_arg(int argc, char **argv);
 void ft_exec_part_one(char **env);
+char *ft_search_path(char *var);
+void ft_exec_part_two(char **env);
 #endif

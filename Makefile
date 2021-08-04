@@ -4,6 +4,7 @@ CFLAGS=  -Wall -Wextra -Werror
 OBJ = ${SRCS:.c=.o}
 
 SRCS =		ft_parsing.c\
+			ft_utils.c\
 			ft_exec.c
 		
 OBJS	=	$(SRCS:.c=.o)
