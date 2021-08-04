@@ -20,11 +20,13 @@ int main(int argc, char *argv[], char *env[])
 {
     pid_t n1;
     pid_t n2;
+    int            pipe_fd[2];
 
 
     g_da.env = env;
     ft_handle_nb_arg(argc, argv);
     ft_create_prechain();
+    pipe(pipe_fd);
     n1 = fork();
     n2 = -1;
     if (n1 == 0)
@@ -37,12 +39,18 @@ int main(int argc, char *argv[], char *env[])
     else */
     if (n2 == 0)
     {
+        close(pipe_fd[0]);
+        dup2(g_da.fd_1, STDIN_FILENO);
+        dup2(pipe_fd[1], STDOUT_FILENO);
         ft_exec_part_one(env);
         return (1);
     }   
-    else if (n1 == 0 && n2 != 0)
+    else if (n1 == 0)
     {
         waitpid(-1, NULL, 0);
+        close(pipe_fd[1]);
+        dup2(g_da.fd_2, STDOUT_FILENO);
+        dup2(pipe_fd[0], STDIN_FILENO);
         ft_exec_part_two(env);
         return(1);
     }

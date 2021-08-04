@@ -8,6 +8,10 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+extern FILE *stderr;
+extern FILE *stdin;
+extern FILE *stdout;
+
 typedef struct s_cmd
 {
     char **chain;
