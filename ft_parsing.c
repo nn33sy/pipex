@@ -1,7 +1,7 @@
 #include "pipex.h"
 void ft_error_parsing(void)
 {
-    printf("ERROR PARSING");
+   printf("ERROR PARSING");
     exit(EXIT_FAILURE);
 }
 

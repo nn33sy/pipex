@@ -2,7 +2,6 @@ make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/inhow-ch/Desktop/pipex'
 gcc -Iincludes -Wall -Wextra -Werror  -c ft_parsing.c -o ft_parsing.o
 echo "Linking" [ ft_parsing.c ] "\033[35m"OK"\033[00m"
- 
 gcc -Iincludes -Wall -Wextra -Werror  -c ft_utils.c -o ft_utils.o
 echo "Linking" [ ft_utils.c ] "\033[35m"OK"\033[00m"
 gcc -Iincludes -Wall -Wextra -Werror  -c ft_exec.c -o ft_exec.o
